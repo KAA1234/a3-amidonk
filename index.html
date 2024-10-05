@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset='utf-8'>
+    <title>Kevin Amidon</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kevin Amidon</h1>
+    </header>
+    <nav>
+        <a href="./contact.html">Contact</a>
+        <a href="./index.html">Home</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Web Development Concepts</h2>
+            <article>
+                <h3>Web Servers</h3>
+                <p>
+                    When a user wants to visit a webpage they input the <strong>Fully Qualified Domain Name
+                        (FQDN)</strong> into their browser which resolves the IP address using a <strong>Domain Name
+                        System (DNS)</strong> server.
+                    The user then connects to the server using the IP address which host the designated homepage. The
+                    user's browser loads the designated homepage at the root URL
+                    which is typically named <strong>index</strong> with some suffix such as .html, .js, etc. Static
+                    content homepages such as this one typically end
+                    in .html (hypertext mark up language) whereas dynamically generated homepages end in .js
+                    (javascript) or other suffixes.
+                </p>
+
+                <p>
+                    A users Web Dev/Inspector Networks tab output screen displays the <strong>request</strong> and
+                    <strong>response</strong> headers which contain valuable information such as
+                    status code, type, URL, last time modified, and method. The response body contains the actual data
+                    such as the index.html document. If the file is viewed from the web server the URL will
+                    contain a FQDN such as https://web.engr.oregonstate.edu/~amidonk whereas if it viewed from a local
+                    machine the url will be displayed in the following format
+                    file:///users/kevin/Desktop/CS%290/M1/a1-amidonk/index.html.
+                </p>
+
+                <p>
+                    The <strong>favicon.ico</strong> file has a status code of 200 ok because it was found on the server
+                    however the main.css and main.js have a 404 error meaning the files were not found.
+                </p>
+
+                <p>
+                    A URL can consist of a <strong>scheme</strong>, <strong>subdomain</strong>, <strong>host
+                        domain</strong> and <strong>resources</strong>. The scheme is the protocol such as http and
+                    https. The subdomain is
+                    an optional prefix to the domain name such as www. The host domain is the main address of the
+                    website which includes a domain name and a <strong>Top Level Domain (TLD)</strong>. Resources
+                    provide the
+                    specific location where a requested item can be found. The URL
+                    https://web.engr.oregonstate.edu/~amidonk/CS%20290/M1/a1-amidonk/ contains these components; https
+                    is the scheme, web.engr is the subdomain,
+                    oregonstate is the host domain, .edu is the TLD, /~amidonk/CS%20290/M1/a1-amidonk/ is the location
+                    where the index.html file can be found on the server.
+                </p>
+            </article>
+
+            <article>
+                <h3>Frontend Design</h3>
+                <p><strong>Frontend design</strong> is focused on creating the most useful experience for
+                    <strong>users</strong>. It consists of <strong>graphical user-interfaces (GUI)</strong>
+                    , the interactive experience and the overal look and feel and design of the page.
+                </p>
+                <p>
+                    The Five "E"s of usability define a usable website and are:
+                </p>
+                <dl>
+                    <dt>Effective</dt>
+                    <dd>Users meet their goals and end up with correct results.</dd>
+                    <dt>Efficient</dt>
+                    <dd>Users are able to perform tasks with the least number of steps and the are results timely.</dd>
+                    <dt>Enjoyable/ Engaging</dt>
+                    <dd>Users feel engaged and satisified; they are likely to come back.</dd>
+                    <dt>Easy to Learn/ Navigate</dt>
+                    <dd>Users are able to intuitively use the site and locate the resources they need. </dd>
+                    <dt>Error-free/ Error-tolerant</dt>
+                    <dd>Users do not run into road blocks or errors.</dd>
+                </dl>
+                <p>
+                    Page layout <strong>tags</strong> break up the flow of the content and make content more readable. Common page layout tags are the <strong>header</strong> tag which 
+                    denotes the banner. The <strong>nav</strong> tag which takes users from the current page to another page. The <strong>main</strong> tag which denotes the core block that 
+                    contains content. The <strong>section</strong> tag which is used to make a grouping of content. The <strong>article</strong> tag which is inside a section and denotes a single
+                    topic and finally, the <strong>footer</strong> tag which usually holds legal information, contact information and links to critical pages.
+                </p>
+                <p><strong>Anchors</strong> link to content in the following ways.</p>
+                <ol>
+                    <li>External content - using a URL</li>
+                    <li>Internal content - using an ID</li>
+                    <li>page-to-page - using an <strong>absolute</strong> or <strong>relative</strong> path</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 Kevin Amidon</p>
+</footer>
+
+</html>
