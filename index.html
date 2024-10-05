@@ -8,17 +8,20 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> 
-<link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png"> 
-<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png"> 
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> 
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> 
-<link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 
 <body>
     <header>
-        <h1>Kevin Amidon</h1>
+        <h1>
+            <image src="./android-chrome-192x192.png" alt="favicon KA" width="30px" height="30px"></image>
+            Kevin Amidon
+        </h1>
     </header>
     <nav>
         <a href="./index.html">Home</a>
@@ -28,7 +31,13 @@
     <main>
         <section>
             <h2>Web Development Concepts</h2>
-            <article>
+            <nav class="local">
+                <a href="#webServers">Web Servers</a>
+                <a href="#frontendDesign">Frontend Design</a>
+                <a href="#optimizingImages">Optimizing Images</a>
+                <a href="#favicons">Favicons</a>
+            </nav>
+            <article id="webServers">
                 <h3>Web Servers</h3>
                 <p>
                     When a user wants to visit a webpage they input the <strong>Fully Qualified Domain Name
@@ -72,10 +81,10 @@
                 </p>
             </article>
 
-            <article>
+            <article id="frontendDesign">
                 <h3>Frontend Design</h3>
                 <p><strong>Frontend design</strong> is focused on creating the most useful experience for
-                    <strong>users</strong>. It consists of <strong>graphical user-interfaces (GUI)</strong>
+                    <strong>users</strong>. It consists of <strong>Graphical User-Interfaces (GUI)</strong>
                     , the interactive experience and the overal look and feel and design of the page.
                 </p>
                 <p>
@@ -109,6 +118,39 @@
                     <li>Internal content - using an ID</li>
                     <li>page-to-page - using an <strong>absolute</strong> or <strong>relative</strong> path</li>
                 </ol>
+            </article>
+            <article id="optimizingImages">
+                <h3>Optimizing Images</h3>
+                <p>The six major image optimizing specifications are a descriptive file name, small file size, exact
+                    dimensions, correct file format, reduced resolution and color modified.
+                    A descriptive file name improvese <strong>Search Engine Optimization (SEO)</strong>. Having a small
+                    file size allows images to load quickly. Using exact dimensions allows the image to load
+                    efficiently and without distorting the image. Correct file formate enables images to display
+                    properly for their use case for example online photos typically are in JPEG and render best in this
+                    format.
+                    Reduced resolution is key to loading images quickly. You want to aim for providing an image that has
+                    the same resolution as the display. Color mode should allign to the file format
+                    of the image. For example RGB is typically used for .PNG and .JPG images.
+                </p>
+                <p>
+                    File formats appropriate for photos are .JPG and .WebP. Both file types are able to be compressed to
+                    a smaller size than images stored in other file formats. Images have a lot of pixels and
+                    compression is an important attribute for fast loading of web pages and images.
+
+                    File formats appropriate for line art are .GIF, .PNG and .SVG. GIF offers 8-bit transparency and/ or
+                    animation. The advantage of using .GIF is a small file size. SVG files are able to scale
+                    mathematically with the
+                    dimensions of the display, they also have a small file size. PNG files offer transparency and work
+                    well with 2d art.
+                </p>
+            </article>
+            <article id="favicons">
+                <h3>Favicons</h3>
+                <p><strong>Favicons</strong> are used by browser and devices to display a default logo in the browser tab and sometimes sometimes in other locations such as on the home page. 
+                    This website's favicon is  <image src="./android-chrome-192x192.png" alt="favicon KA" width="20px" height="20px"></image>  which is displayed both in the browser tab and on the homepage at the top.
+                    Favicons are images stored in a variety of formats to include as favicon.ico in the root directory. Browsers and devices know to display this image in the tab when found in the root directory
+                    by default. Links are added to the head of the html document to make the favicon images display appropriately for a variety of devices.
+                </p>
             </article>
         </section>
     </main>
